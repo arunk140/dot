@@ -1,4 +1,8 @@
-# Generate Certs
+```
+Note: Client Server Connection will not work without Valid Certs (TLS)
+```
+
+### Generate Certs with Valid SANs (eg. with FQDN as localhost)
 
 ```
 openssl ecparam -genkey -name prime256v1 -out server.key
